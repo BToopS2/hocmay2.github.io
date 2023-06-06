@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <button id="downloadBtn">Tải xuống</button>
+
+  <script>
+    // Khi người dùng nhấp vào nút "Tải xuống"
+    $("#downloadBtn").click(function() {
+      // Gửi yêu cầu tải xuống tệp dữ liệu từ Kaggle API
+      $.ajax({
+        url: "https://www.kaggle.com/datasets/soumikrakshit/anime-faces/download?datasetVersionNumber=1",
+        type: "GET",
+        headers: {
+          "Authorization": "1c60dba6f989a81f5a142176a5bfd931"
+        },
+        success: function(data) {
+          // Xử lý kết quả tải xuống tệp dữ liệu
+          // Ví dụ: Tạo một liên kết tới tệp dữ liệu và hiển thị nó trên trang web
+          var downloadLink = document.createElement("a");
+          downloadLink.href = URL.createObjectURL(data);
+          downloadLink.download = "dataset.csv";
+          downloadLink.click();
+        },
+        error: function(error) {
+          console.log("Lỗi khi tải xuống tệp dữ liệu từ Kaggle: ", error);
+        }
+      });
+    });
+  </script>
+</body>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <a href="https://www.kaggle.com/datasets/soumikrakshit/anime-faces/download?datasetVersionNumber=1" target="_blank"><button>Tìm hiểu thêm</button></a>
+</body>
+<img src="dcgan1\image_493.png" alt="Mô tả ảnh">
+
+
+</html>

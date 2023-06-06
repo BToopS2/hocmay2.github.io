@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+<link rel='shortcut icon' href='iconti.png'>
+<title>Website of HHH</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main1.css">
+</head>
+<h1 style=" color: rgba(243, 13, 13, 0.966); font-size:45px; text-align:center">
+    <marquee behavior="scroll" direction="left"><br/><br/>CHÀO MỪNG ĐẾN VỚI PROJECT HỌC MÁY CỦA NHÓM 6</marquee>
+</h1>
+
+
+<h2 style=" color: rgb(247, 243, 6); font-size:33px; text-align:center"> NGHIÊN CỨU MẠNG GENERATIVE ADVERSARIAL NETWORKS ĐỂ ỨNG DỤNG TẠO KHUÔN MẶT ANIME MỚI </h2>
+
+
+<!-- <body style="background-color: #ece0e0; background-repeat: no-repeat; background-position: center; opacity: 0.8;"> -->
+
+<body style="background-image: url('anh23.jpg')">
+
+    <div class="login-account">
+        <br/><br/><br/><br/>
+        <!-- <h1 text-align="center">Đăng nhập để biết thêm thông tin</h1> -->
+        <!-- <h3 style=" color: rgb(11, 27, 13); font-size:30px; text-align:center"> Đăng nhập để biết thêm thông tin</h3> -->
+        <h4 style=" color: rgba(13, 15, 11, 0.966); font-size:35px; text-align:center">
+            Hãy chọn chế độ để tạo 1 khuôn mặt anime ngẫu nhiễn
+            <!-- <marquee behavior="scroll" direction="center">Xin mời đăng nhập</marquee> -->
+        </h4>
+        <div class="form">
+            
+                <!-- <label style="font-size:25px;">Username:</label><br><br>
+                <input id="username" type="text" placeHolder="Tên đăng nhập" required><br><br>
+
+                <label style="font-size:25px;">Password:</label><br><br>
+                <input id="password" type="password" placeHolder="Mật khẩu" required><br><br> -->
+                <!-- <button type="submit">DCGAN</button>
+image_names = []
+
+for i in range(14000, 14401):
+    image_name = "'"+str(i) + ".png',"
+    image_names.append(image_name)
+
+for image_name in image_names:
+    print(image_name)
+
+
+                <br/><br/><br/> <button type="submit">WGAN-GP</button> -->
+                <button onclick="displayRandomImage(1)">WGAN-GP</button>
+                <img id="randomImage1" src="" alt="Hãy click để tạo ảnh" style="font-size:25px; color:rgb(38, 0, 255)">
+                <br/><br/><br/>
+                <button onclick="displayRandomImage1(2)">DCGAN</button>
+                <img id="randomImage2" src="" alt="Hãy click để tạo ảnh" style="font-size:25px; color:rgb(38, 0, 255)">
+            
+
+        </div>
+    </div>
+    <script src="./main1.js"></script>
+</body>
+<audio src="sncp.mp3" controls></audio>
+<audio src="voice.mp3" controls></audio>
+
+</html>
