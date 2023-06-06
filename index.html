@@ -9,10 +9,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main1.css">
+    <script>
+        function startTraining() {
+          var button = document.getElementById("trainButton");
+          button.innerText = "Training...";
+    
+          var progress = 0;
+          var intervalId = setInterval(updateProgress, 1000);
+    
+          function updateProgress() {
+            progress += 10;
+            if (progress <= 100) {
+              button.innerText = "Training: " + progress + "%";
+            } else {
+              button.innerText = "Đã xong";
+              clearInterval(intervalId);
+            }
+          }
+        }
+      </script>
 </head>
 <h1 style=" color: rgba(243, 13, 13, 0.966); font-size:45px; text-align:center">
     <marquee behavior="scroll" direction="left"><br/><br/>CHÀO MỪNG ĐẾN VỚI PROJECT HỌC MÁY CỦA NHÓM 6</marquee>
 </h1>
+  <label for="folder">Upload data:</label>
+  <input type="file" id="folder" webkitdirectory directory multiple>
+  <button id="trainButton" onclick="startTraining()">TrainData</button>
 
 
 <h2 style=" color: rgb(247, 243, 6); font-size:33px; text-align:center"> NGHIÊN CỨU MẠNG GENERATIVE ADVERSARIAL NETWORKS ĐỂ ỨNG DỤNG TẠO KHUÔN MẶT ANIME MỚI </h2>
