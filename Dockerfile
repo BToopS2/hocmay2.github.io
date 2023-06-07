@@ -2,7 +2,7 @@
 FROM node:14
 
 # Thiết lập thư mục làm việc trong container
-WORKDIR /app
+WORKDIR /web
 
 # Sao chép package.json và package-lock.json vào thư mục làm việc
 COPY package*.json ./
@@ -18,5 +18,5 @@ EXPOSE 3000
 
 # Chạy lệnh để khởi động ứng dụng
 CMD ["npm", "start"]
-docker build -t ten_hinh_anh:tag .
-docker run -p 3000:3000 -d ten_hinh_anh:tag
+docker build -t new_image_face_anime:tag .
+docker run -p 3000:3000 -d new_image_face_anime:tag
