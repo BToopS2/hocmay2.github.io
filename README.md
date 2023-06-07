@@ -1,2 +1,4 @@
 # hocmay2.github.io
-xin chào
+Hello. 
+THIS IS MY GIT
+THANKS FOR WATCHING
